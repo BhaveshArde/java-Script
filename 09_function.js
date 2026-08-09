@@ -43,6 +43,7 @@ function showSecondHero(anyhero){
 }
 console.log(showSecondHero(hero));
 
+// arrow function try 
 let add=(a,b)=>{
     return a+b;
 }
