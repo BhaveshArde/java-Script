@@ -26,3 +26,29 @@ newpara.innerText="hello"
 newpara.className="newp"
 console.log(newpara);
 document.body.appendChild(newpara)
+
+// edit / add / remove element in html
+function addlanguage(lanName){
+    const newElemnet=document.createElement("li");
+    newElemnet.innerHTML=`${lanName}`
+    document.querySelector(".language");
+    newElemnet.appendChild;
+
+}
+
+addlanguage("Python");
+
+//edit
+const secondLi=document.querySelector("li:nth-child(2)");    // Access the list element
+const newEL=document.createElement('li');     //create new element
+newEL.textContent='C++';             //add text in new element
+newEL.replaceWith(newEL);        //replace old to new 
+
+//second example
+const firstLi=document.querySelector("li:nth-child(1)");
+newEL.textContent="Java";
+firstLi.replaceWith(newEL);
+
+//remove
+const lastelment=document.querySelector("li:last-child");   //access last child
+lastelment.remove();      // delete child
